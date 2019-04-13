@@ -56,7 +56,7 @@ def generate(ip, port = 80):
 if __name__ == '__main__':
 	argc = len(sys.argv)
 	if len(sys.argv) != 4:
-		print("usage: {} begin-ip end-ip port\npython3 {} 124.125.126.1 124.125.127.255 80\n")
+		print("usage: python3 {} begin-ip end-ip port\npython3 {} 124.125.126.1 124.125.127.255 80\n".format(sys.argv[0], sys.argv[0]))
 	else:
 		urls = scan(sys.argv[1], sys.argv[2], sys.argv[3])
 		print(urls)
